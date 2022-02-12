@@ -8,7 +8,7 @@ const defaultProps = {
 const defaultClasses = "close";
 
 const CloseBtn = (props) => {
-	const { ariaLabel, classes, label, classOverride } = { ...defaultProps, ...props };
+	let { ariaLabel, classes, label, overrideClasses } = { ...defaultProps, ...props };
 
 	if (!overrideClasses) {
 		classes += ` ${ defaultClasses }`;
